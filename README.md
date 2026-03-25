@@ -14,8 +14,8 @@ A modern, containerized Python tool to parse Nessus XML v2 (`.nessus`) files int
 ## Setup
 
 ### Prerequisites
-- **Docker**: For containerized execution (Recommended).
-- **Python 3.8+**: If running locally.
+- **Docker**: For containerized execution (Recommended across Windows 11 and Linux 2026.x).
+- **Python 3.12+**: If running locally.
 
 ### Installation (Local Python)
 1. **Clone the repository**:
@@ -44,7 +44,7 @@ Build and run the container without installing Python dependencies on your host.
    # Linux/Mac
    docker run --rm -v $(pwd):/app nessus_parser -f your_scan.nessus
 
-   # Windows PowerShell
+   # Windows 11 PowerShell
    docker run --rm -v ${PWD}:/app nessus_parser -f your_scan.nessus
    ```
 
